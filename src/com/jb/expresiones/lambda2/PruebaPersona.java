@@ -33,9 +33,12 @@ public class PruebaPersona {
 		System.out.println("2do listado:");
 		personas.forEach(p -> System.out.println(p.nombre));
 		
-		Stream<Persona> personas2 = personas.stream().filter(p -> p.nombre.startsWith("A"));
+		Stream<Persona> personas2 = personas.stream()
+				.filter(p -> p.nombre.startsWith("A"));
 		
-		List<Persona> personas3 = personas.stream().filter(p -> p.nombre.startsWith("M")).collect(Collectors.toList());
+		List<Persona> personas3 = personas.stream()
+				.filter(p -> p.nombre.startsWith("M"))
+				.collect(Collectors.toList());
 
 		List<String> nombres = personas.stream()
 				.filter(p -> p.nombre != null)
