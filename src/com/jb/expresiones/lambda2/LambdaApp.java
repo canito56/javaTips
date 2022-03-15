@@ -36,11 +36,10 @@ public class LambdaApp {
     }
     
     public void ordenar() {
-
     	Collections.sort(lista, (String p1, String p2) -> p1.compareTo(p2));
 
     	System.out.println();
-		System.out.println("ordenar clÃ¡sico");
+		System.out.println("ordenar clásico o imperativo");
 
 		for (String e : lista) {
 			System.out.println(e);
@@ -49,6 +48,7 @@ public class LambdaApp {
     	System.out.println();
 		System.out.println("ordenar lambda ascendente");
 		lista.stream().sorted().forEach(System.out::println);
+
 		System.out.println();
 		System.out.println("ordenar lambda descendente");
 		lista.stream().sorted((l1, l2) -> l2.compareTo(l1)).forEach(System.out::println);		
