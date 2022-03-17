@@ -1,4 +1,4 @@
-package com.jb.metodos.de.referencia;
+package com.jb.methodReference;
 
 public class MetodoRefMetStatic {
     

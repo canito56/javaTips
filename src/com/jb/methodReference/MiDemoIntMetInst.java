@@ -1,4 +1,4 @@
-package com.jb.metodos.de.referencia;
+package com.jb.methodReference;
 
 //Esta clase almacena un valor int y define el método de instancia esDivisor()
 //que devuelve true si su argumento es un divisor del valor almacenado.

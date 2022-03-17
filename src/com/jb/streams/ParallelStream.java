@@ -30,7 +30,7 @@ public class ParallelStream {
 	public void probarStreamParalelo() {
 		System.out.println();
 		System.out.println("probarStreamParalelo, cada vez que ejecuto los nros aparecen en otro orden" +
-		                   "\nporque estoy trabajando con hilos, es un comportamiento aleatorio.");
+		                   "\nporque estoy trabajando con hilos, es un comportamiento asincrono y aleatorio.");
 		numeros.parallelStream().forEach(System.out::println);		
 	}
 
