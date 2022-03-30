@@ -9,7 +9,10 @@ import java.util.function.Predicate;
 public class HighOrderApp {
 
 	private Function<String, String> convertirMayusculas = x -> x.toUpperCase();
+	private Function<String, String> convMayRef = String::toUpperCase;
+	
 	private Function<String, String> convertirMinusculas = x -> x.toLowerCase();
+	private Function<String, String> convMinRef = String::toLowerCase;
 	
 	public void imprimir(Function<String, String> funcion, String valor) {
 		System.out.println(funcion.apply(valor)); 
@@ -37,10 +40,14 @@ public class HighOrderApp {
 	
 	public static void main(String[] args) {
 		HighOrderApp app = new HighOrderApp();
+		
 		app.imprimir(app.convertirMayusculas, "mitocode");
+		app.imprimir(app.convMayRef, "river es el mejor!");
+		
 		app.imprimir(app.convertirMinusculas, "MITOCODE");
-		String rpta = app.mostrar("Hola ").apply("MitoCode");
-		System.out.println(rpta);
+		app.imprimir(app.convMinRef, "BETO ALONSO");
+
+		System.out.println(app.mostrar("Hola ").apply("MitoCode"));
 		
 		List<String> lista = new ArrayList<>();
 		lista.add("Mito");

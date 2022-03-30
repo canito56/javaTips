@@ -70,7 +70,7 @@ public class LambdaApp {
 	
 	public void transformar() {
 		System.out.println();
-		System.out.println("convertir a mayúsculas");
+		System.out.println("convertir a mayusculas");
 		lista.stream().map(String::toUpperCase).forEach(System.out::println);		
 
 		System.out.println();
