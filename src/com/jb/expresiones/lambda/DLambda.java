@@ -21,8 +21,10 @@ public class DLambda {
             return res;
         };
         
-         System.out.println("El divisor más pequeño de 12 es: " + divPeq.func(12));
-         System.out.println("El divisor más pequeño de 15 es: " + divPeq.func(-15));
+        System.out.println("El divisor más pequeño de 1 es: " + divPeq.func(1));
+        System.out.println("El divisor más pequeño de 2 es: " + divPeq.func(2));
+        System.out.println("El divisor más pequeño de 12 es: " + divPeq.func(12));
+        System.out.println("El divisor más pequeño de -15 es: " + divPeq.func(-15));
 
 	}
 

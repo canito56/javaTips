@@ -26,7 +26,7 @@ public class BLambda {
 
         if (igualAbs.prueba(4, -4))
         	System.out.println("Valores absolutos de 4 y -4 son iguales");
-        if (!igualAbs.prueba(4, 5))
+        if (!igualAbs.prueba(4, -5))
             System.out.println("Valores absolutos de 4 y -5 NO son iguales");
 	
 	}

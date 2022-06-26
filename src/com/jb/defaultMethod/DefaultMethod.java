@@ -10,12 +10,13 @@ public class DefaultMethod implements PersonaA, PersonaB {
 
 	@Override
 	public void caminar() {
-		System.out.println("Hola viejo!");
+		System.out.println("Estoy caminando viejo!");
 	}
 
 	@Override
 	public void hablar() {
 		PersonaA.super.hablar();
+		PersonaB.super.hablar();
 		System.out.println("Saludos viejo!");	// además puedo sobreescribir el método 
 	}
 

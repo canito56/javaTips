@@ -36,10 +36,9 @@ public class LambdaApp {
     }
     
     public void ordenar() {
-    	Collections.sort(lista, (String p1, String p2) -> p1.compareTo(p2));
-
-    	System.out.println();
 		System.out.println("ordenar clásico o imperativo");
+
+		Collections.sort(lista, (String p1, String p2) -> p1.compareTo(p2));
 
 		for (String e : lista) {
 			System.out.println(e);

@@ -8,9 +8,9 @@ public class OptionalApp {
 
 	public static void main(String[] args) {
 		OptionalApp app = new OptionalApp();
-/*		app.probar(null);
-		app.orElse(null);
-		app.orElseThrow(null); */
+//		app.probar(null);
+//		app.orElse(null);
+//		app.orElseThrow(null); 
 		app.isPresent(null);
 	}
 
@@ -33,6 +33,7 @@ public class OptionalApp {
 	public void orElseThrow(String valor) {
 		Optional<String> op = Optional.ofNullable(valor);
 		op.orElseThrow(NumberFormatException::new);
+		System.out.println(op);
 	}
 	
 	public void isPresent(String valor) {

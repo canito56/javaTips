@@ -22,6 +22,12 @@ public class ArrayListToArray {
         for (float f : arr)
             System.out.print(f + " ");
         
+        System.out.println();
+        System.out.println();
+        System.out.println("imprimir al con lambda: ");
+        
+        al.stream().forEach(System.out::println);
+        
  	}
 	
 }
